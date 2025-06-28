@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  lamp:
+    image: php:8.3-apache
+    ports:
+      - "8081:80"
+    volumes:
+      - ./mysite:/var/www/html
+
